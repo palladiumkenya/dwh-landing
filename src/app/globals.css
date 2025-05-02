@@ -24,3 +24,76 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+a:hover {
+  color: #8F43AE; /* Hover color */
+}
+a:active {
+  color: #8F43AE; /* Active link color */
+}
+
+.highlight {
+  color: #8F43AE; /* Active link color */
+  font-weight: bold;
+}
+
+
+
+.circle-background {
+  position: relative;
+  display: inline-block;
+}
+
+.circle-background::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px; /* Adjust the size as needed */
+  height: 200px; /* Adjust the size as needed */
+  background-color: #8F43AE; /* Background circle color */
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1; /* Ensure the circle is behind the image */
+}
+
+
+.rounded-lg {
+  border-radius: 0.5rem; /* Adjust the border radius as needed */
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Adjust the shadow as needed */
+}
+
+.banner{
+   color: white; /* Text color */
+   font-weight: bold;
+   background-image: url('/banner.png'); /* Path to your background image */
+   background-size: cover; /* Adjusts the image to cover the entire element */
+   background-position: center; /* Centers the image */
+   background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+.tile-light{
+  background-color: white;
+  color: #8F43AE;
+}
+.tile-dark{
+  background-color: #8F43AE;
+  color: white;
+}
+.icon-bg{
+  border-radius: 50%; border: 2px solid #8F43AE; padding: 10px;
+}
+.icon-dark-bg{
+  border-radius: 50%; border: 2px solid #8F43AE; padding: 10px;
+}
+.icon-light-bg{
+  border-radius: 50%; border: 2px solid white; padding: 10px;
+}
+.footer-gb{
+  background-color: #8F43AE;
+  color: white;
+}

@@ -1,24 +1,35 @@
+import {faTwitter} from "@fortawesome/free-brands-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {
+  faAreaChart,
+  faBarChart,
+  faDatabase,
+  faHeartPulse,
+  faMapLocation,
+  faSearchPlus
+} from "@fortawesome/free-solid-svg-icons";
+
 const Products = () => {
   const tiles = [
     {
-      image: "/icon1.png",
-      name: "App One",
-      description: "This is the description for App One."
+      image: faBarChart,
+      name: "NDW Portal",
+      description: "The NDW Portal serves as an enterprise-wide data repository, providing data warehousing capabilities for health-related information"
     },
     {
-      image: "/icon2.png",
-      name: "App Two",
-      description: "This is the description for App Two."
+      image: faMapLocation,
+      name: "Geo Spatial Intelligence Maps",
+      description: "Interactive maps that show patient distribution and outcomes and easily allow drill down from national to facility level to uncover spatial patterns and guide targeted interventions."
     },
     {
-      image: "/icon3.png",
-      name: "App Three",
-      description: "This is the description for App Three."
+      image: faDatabase,
+      name: "Self-Service Analytics",
+      description: "Empowering registered users to explore and analyze their own data—build custom charts, extract datasets, and generate insights to inform decisions and improve program outcomes."
     },
     {
-      image: "/icon4.png",
-      name: "App Four",
-      description: "This is the description for App Four."
+      image: faHeartPulse,
+      name: "HIV Case Surveillance Dashboards",
+      description: "Everything you need to know about HIV Case Surveillance - from real-time trends and longitudinal tracking of cohorts to geographic hotspots and public health response reports- all in one place."
     }
   ];
 
@@ -29,11 +40,11 @@ const Products = () => {
           {tiles.map((tile, index) => (
               <div
                   key={index}
-                  className={`shadow-lg rounded-lg p-4 text-center ${index % 2 === 0 ? 'bg-blue-500 text-white' : 'bg-white text-black'}`}
+                  className={`shadow-lg rounded-lg p-4 text-left ${index % 2 === 0 ? 'tile-light' : 'tile-dark'}`}
               >
-                <img src={tile.image} alt={tile.name} className="mx-auto mb-4 h-16 w-16" />
+                <FontAwesomeIcon icon={tile.image} className='icon-bg mx-auto mb-4 h-16 w-16' style={{ marginLeft: '0', marginRight: 'auto' }} />
                 <h2 className="text-xl font-bold mb-2">{tile.name}</h2>
-                <p className="text-gray-600">{tile.description}</p>
+                <p>{tile.description}</p>
               </div>
           ))}
         </div>
