@@ -46,7 +46,7 @@ const Products = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-sm">
                 {tiles.map((tile, index) => (
-                    <Link href={tile.href} key={index} legacyBehavior>
+                    <Link href={tile.href || '#'} key={index} legacyBehavior>
                         <a
                             key={index}
                             className={`no-hover shadow-lg rounded-lg p-4 text-left ${index % 2 === 0 ? 'tile-light' : 'tile-dark'}`}
