@@ -9,8 +9,8 @@ const Footer = () => {
           <div>
 
             <div className="flex space-x-4 mb-4">
-              <img src="/dwh.png" alt="Image 1" className="h-16 w-25"/>
-              <img src="/nascop.png" alt="Image 2" className="h-16 w-25"/>
+              <img src="/dwh.png" alt="Image 1" className="h-12 w-35"/>
+              <img src="/nascop.png" alt="Image 2" className="h-12 w-35"/>
             </div>
             <p className="mb-2">Welcome to the Kenya National Data Warehouse, your gateway to vital data solutions.
               Empowering decision makers, researchers, and the public, we drive innovation, enhance public health, and
