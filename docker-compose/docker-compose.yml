@@ -5,10 +5,10 @@ services:
       container_name: dwhlanding
       restart: always
       environment:
-        - REACT_APP_API_URL=${APP_API_URL}
-        - NDW_LINK=${APP_NDW_LINK}
-        - GIS_LINK=${APP_GIS_LINK}
-        - SELF_SERVICE_LINK=${APP_SELF_SERVICE_LINK}
-        - CS_LINK=${APP_CS_LINK}
+        - NEXT_PUBLIC_API_URL=${APP_API_URL}
+        - NEXT_PUBLIC_NDW_LINK=${APP_NDW_LINK}
+        - NEXT_PUBLIC_GIS_LINK=${APP_GIS_LINK}
+        - NEXT_PUBLIC_SELF_SERVICE_LINK=${APP_SELF_SERVICE_LINK}
+        - NEXT_PUBLIC_CS_LINK=${APP_CS_LINK}
       ports:
         - "${APP_PORT}:${APP_HOST_PORT}"
