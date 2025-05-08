@@ -5,7 +5,7 @@ import {
     faAreaChart,
     faBarChart,
     faDatabase,
-    faHeartPulse,
+    faHeartPulse, faLineChart,
     faMapLocation,
     faSearchPlus
 } from "@fortawesome/free-solid-svg-icons";
@@ -31,7 +31,7 @@ const Products = () => {
 
     const tiles = [
         {
-            image: faBarChart,
+            image: faAreaChart,
             name: "NDW Portal",
             description: "The NDW Portal serves as an enterprise-wide data repository, providing data warehousing capabilities for health-related information",
             href: ndwLink
