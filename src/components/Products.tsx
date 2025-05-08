@@ -1,3 +1,4 @@
+'use client'
 import {faTwitter} from "@fortawesome/free-brands-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {
@@ -9,25 +10,24 @@ import {
     faSearchPlus
 } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
+import useRuntimeConfig from "@/lib/useRuntimeConfig";
 
 const Products = () => {
-    const ndwLink =
-        typeof window !== 'undefined' && window.RUNTIME_CONFIG
-            ? window.RUNTIME_CONFIG.NEXT_PUBLIC_NDW_LINK
-            : process.env.NEXT_PUBLIC_NDW_LINK;
 
-    const gisLink =
-        typeof window !== 'undefined' && window.RUNTIME_CONFIG
-            ? window.RUNTIME_CONFIG.NEXT_PUBLIC_GIS_LINK
-            : process.env.NEXT_PUBLIC_GIS_LINK;
-    const csLink =
-        typeof window !== 'undefined' && window.RUNTIME_CONFIG
-            ? window.RUNTIME_CONFIG.NEXT_PUBLIC_CS_LINK
-            : process.env.NEXT_PUBLIC_CS_LINK;
-    const ssLink =
-        typeof window !== 'undefined' && window.RUNTIME_CONFIG
-            ? window.RUNTIME_CONFIG.NEXT_PUBLIC_SELF_SERVICE_LINK
-            : process.env.NEXT_PUBLIC_SELF_SERVICE_LINK;
+    const config = useRuntimeConfig();
+
+    const ndwLink =config?.NEXT_PUBLIC_NDW_LINK!="" ?
+        config?.NEXT_PUBLIC_NDW_LINK:
+        process.env.NEXT_PUBLIC_NDW_LINK;
+    const gisLink =config?.NEXT_PUBLIC_GIS_LINK!=""?
+        config?.NEXT_PUBLIC_GIS_LINK:
+        process.env.NEXT_PUBLIC_GIS_LINK;
+    const csLink =config?.NEXT_PUBLIC_CS_LINK!="" ?
+        config?.NEXT_PUBLIC_CS_LINK:
+        process.env.NEXT_PUBLIC_CS_LINK;
+    const ssLink =config?.NEXT_PUBLIC_SELF_SERVICE_LINK!="" ?
+        config?.NEXT_PUBLIC_SELF_SERVICE_LINK:
+        process.env.NEXT_PUBLIC_SELF_SERVICE_LINK;
 
     const tiles = [
         {
@@ -56,7 +56,12 @@ const Products = () => {
         }
     ];
 
+    if (!config) {
+        return null; // or return <Loading /> if you want
+    }
+    console.log("CNF>",config)
     return (
+
         <div className="max-w-7xl mx-auto px-4" id="products">
             <br/>
             <br/>
