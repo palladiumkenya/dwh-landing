@@ -48,12 +48,12 @@ a:active {
 .circle-background::before {
   content: '';
   position: absolute;
-  top: 50%;
+  top: 92%;
   left: 50%;
-  width: 200px; /* Adjust the size as needed */
+  width: 400px; /* Adjust the size as needed */
   height: 200px; /* Adjust the size as needed */
-  background-color: #8F43AE; /* Background circle color */
-  border-radius: 50%;
+  background-color: #f0dffa; /* Background circle color */
+  border-radius: 200px 200px 0 0; /* Create a half-circle */
   transform: translate(-50%, -50%);
   z-index: -1; /* Ensure the circle is behind the image */
 }
@@ -65,6 +65,18 @@ a:active {
 
 .shadow-lg {
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Adjust the shadow as needed */
+}
+
+.float-image {
+  display: inline-block;
+  position: relative;
+  z-index: 1; /* Ensure the image is above other elements */
+  border: none; /* Remove any border */
+  border-radius: 0;
+  width: 1000px;
+  top:66px
+  /*height: auto; !* Maintain aspect ratio *!*/
+  /* Ensure corners are not rounded */
 }
 
 .banner{
@@ -79,6 +91,7 @@ a:active {
 .tile-light{
   background-color: white;
   color: #8F43AE;
+  border: 1px solid black; /* Add a black border */
 }
 .tile-dark{
   background-color: #8F43AE;
@@ -96,4 +109,8 @@ a:active {
 .footer-gb{
   background-color: #8F43AE;
   color: white;
+  background-image: url('/banner.png'); /* Path to your background image */
+  background-size: cover; /* Adjusts the image to cover the entire element */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
 }

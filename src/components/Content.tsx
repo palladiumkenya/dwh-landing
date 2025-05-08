@@ -1,6 +1,6 @@
 const Content = () => {
     return (
-        <div className="relative bg-cover bg-center h-96" style={{ backgroundImage: "url('/background.jpg')" }}>
+        <div className="relative bg-cover bg-center h-96">
             <div className="absolute inset-0 bg-white opacity-50"></div>
             <div className="relative z-10 flex items-center h-full">
                 <div className="max-w-7xl mx-auto px-4 flex items-center justify-between">
@@ -20,8 +20,8 @@ const Content = () => {
                             it’s inception. As at <span className="highlight">Jun 2024</span>, 2372 facilities
                             had reported patients current on ART</p>
                     </div>
-                    <div className="w-1/2 circle-background">
-                        <img src="/doc.png" alt="Content Image" className="rounded-lg shadow-lg"/>
+                    <div>
+                        <img src="/doc-trans.png" alt="Content Image" className="float-image"/>
                     </div>
                 </div>
             </div>

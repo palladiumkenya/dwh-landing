@@ -34,20 +34,26 @@ const Products = () => {
   ];
 
   return (
-      <div className="p-8">
+      <div className="max-w-7xl mx-auto px-4">
+        <br/>
+        <br/>
         <h1 className="text-3xl font-bold mb-8 text-left">Information Products</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-sm">
           {tiles.map((tile, index) => (
               <div
                   key={index}
                   className={`shadow-lg rounded-lg p-4 text-left ${index % 2 === 0 ? 'tile-light' : 'tile-dark'}`}
               >
-                <FontAwesomeIcon icon={tile.image} className='icon-bg mx-auto mb-4 h-16 w-16' style={{ marginLeft: '0', marginRight: 'auto' }} />
-                <h2 className="text-xl font-bold mb-2">{tile.name}</h2>
+                <FontAwesomeIcon icon={tile.image} className={`mx-auto mb-4 h-16 w-16 ${index % 2 === 0 ? 'icon-light-bg' : 'icon-dark-bg'}`}
+                                 style={{marginLeft: '0', marginRight: 'auto'}}/>
+                <h2 className={`font-bold mb-2 `}>{tile.name}</h2>
                 <p>{tile.description}</p>
               </div>
           ))}
         </div>
+        <br/>
+        <br/>
+        <br/>
       </div>
   );
 }
