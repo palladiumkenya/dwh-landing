@@ -1,11 +1,11 @@
 const Navbar = () => {
     return (
-        <nav className="bg-white shadow-lg">
+        <nav className="bg-white">
             <div className="max-w-7xl mx-auto px-4">
                 <div className="flex justify-between items-center py-6">
                     <div className="flex items-center">
-                        <img className="h-20 w-50" src="/dwh.png" alt="DWH"/>
-                        <img className="h-20 w-50" src="/nascop.png" alt="NASCOP"/>
+                        <img className="h-12 w-35" src="/dwh.png" alt="DWH"/>
+                        <img className="h-12 w-35" src="/nascop.png" alt="NASCOP"/>
                     </div>
                     <div className="flex space-x-4">
                         <a href="#" className="text-gray-800">Home</a>

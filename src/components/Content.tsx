@@ -1,4 +1,10 @@
+'use client'
+import {useStats} from "@/lib/api";
+
 const Content = () => {
+
+    const stats=useStats()
+
     return (
         <div className="relative bg-cover bg-center h-96">
             <div className="absolute inset-0 bg-white opacity-50"></div>
@@ -13,11 +19,11 @@ const Content = () => {
                         </svg>
 
                         <p className="mt-4 text-lg">
-                            <span className="highlight">2372</span> Health Facilities in <span
-                            className="highlight">44</span> counties in Kenya,
-                            supported by <span className="highlight">40</span> SDPs have ever uploaded
+                            <span className="highlight">{stats.facilityCount}</span> Health Facilities in <span
+                            className="highlight">{stats.countyCount}</span> counties in Kenya,
+                            supported by <span className="highlight">{stats.partnerCount}</span> SDPs have ever uploaded
                             care & treatment data to the warehouse since
-                            it’s inception. As at <span className="highlight">Jun 2024</span>, 2372 facilities
+                            it’s inception. As at <span className="highlight">{stats.periodInfo}</span>, {stats.facilityCount} facilities
                             had reported patients current on ART</p>
                     </div>
                     <div className="w-2/1 relative inline-block semicircle-background">
