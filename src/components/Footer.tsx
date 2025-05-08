@@ -19,19 +19,6 @@ const Footer = () => (
                         foster sustainable development.</p>
                     <br/>
                     <p className="mb-2">Discover how data can transform our nation.</p>
-                    <div className="mt-4">
-                        <div className="flex space-x-4">
-                            <a href="#" className="text-blue-500 hover:text-blue-700">
-                                <FontAwesomeIcon icon={faFacebook} className="h-6 w-6"/>
-                            </a>
-                            <a href="#" className="text-blue-500 hover:text-blue-700">
-                                <FontAwesomeIcon icon={faTwitter} className="h-6 w-6"/>
-                            </a>
-                            <a href="#" className="text-blue-500 hover:text-blue-700">
-                                <FontAwesomeIcon icon={faLinkedin} className="h-6 w-6"/>
-                            </a>
-                        </div>
-                    </div>
                 </div>
 
                 <div>
