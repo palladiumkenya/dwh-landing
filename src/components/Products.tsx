@@ -59,7 +59,6 @@ const Products = () => {
     if (!config) {
         return null; // or return <Loading /> if you want
     }
-    console.log("CNF>",config)
     return (
 
         <div className="max-w-7xl mx-auto px-4" id="products">
