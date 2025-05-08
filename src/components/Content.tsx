@@ -4,7 +4,7 @@ const Content = () => {
             <div className="absolute inset-0 bg-white opacity-50"></div>
             <div className="relative z-10 flex items-center h-full">
                 <div className="max-w-7xl mx-auto px-4 flex items-center justify-between">
-                    <div className="w-1/2 text-black text-left">
+                    <div className="w-/4 text-black text-left">
                         <h1 className="text-4xl font-bold">National Data Warehouse</h1>
                         <h1 className="text-4xl font-bold"><span className="highlight">Reimagined</span></h1>
 
@@ -20,7 +20,7 @@ const Content = () => {
                             it’s inception. As at <span className="highlight">Jun 2024</span>, 2372 facilities
                             had reported patients current on ART</p>
                     </div>
-                    <div>
+                    <div className="w-2/1 relative inline-block semicircle-background">
                         <img src="/doc-trans.png" alt="Content Image" className="float-image"/>
                     </div>
                 </div>

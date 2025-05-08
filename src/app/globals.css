@@ -73,8 +73,9 @@ a:active {
   z-index: 1; /* Ensure the image is above other elements */
   border: none; /* Remove any border */
   border-radius: 0;
-  width: 1000px;
-  top:66px
+  width: 1600px;
+  left: 5%;
+  top:76px
   /*height: auto; !* Maintain aspect ratio *!*/
   /* Ensure corners are not rounded */
 }
@@ -113,4 +114,17 @@ a:active {
   background-size: cover; /* Adjusts the image to cover the entire element */
   background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+.semicircle-background::before {
+  content: '';
+  position: absolute;
+  top: 71%; /* Adjust the position as needed */
+  left: 53%;
+  width: 400px; /* Adjust the size as needed */
+  height: 182px; /* Adjust the size as needed */
+  background-color: #efdcff; /* Background circle color */
+  border-radius: 300px 300px 0 0; /* Create a half-circle */
+  transform: translate(-50%, -50%);
+  z-index: -1; /* Ensure the circle is behind the image */
 }
