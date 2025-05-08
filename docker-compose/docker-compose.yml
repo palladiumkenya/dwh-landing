@@ -6,5 +6,9 @@ services:
       restart: always
       environment:
         - REACT_APP_API_URL=${APP_API_URL}
+        - NDW_LINK=${APP_NDW_LINK}
+        - GIS_LINK=${APP_GIS_LINK}
+        - SELF_SERVICE_LINK=${APP_SELF_SERVICE_LINK}
+        - CS_LINK=${APP_CS_LINK}
       ports:
         - "${APP_PORT}:${APP_HOST_PORT}"
