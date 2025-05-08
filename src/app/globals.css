@@ -128,3 +128,8 @@ a:active {
   transform: translate(-50%, -50%);
   z-index: -1; /* Ensure the circle is behind the image */
 }
+
+.no-hover:hover {
+  text-decoration: none;
+  color: inherit;
+}
