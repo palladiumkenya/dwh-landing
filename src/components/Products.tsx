@@ -11,30 +11,48 @@ import {
 import Link from "next/link";
 
 const Products = () => {
+    const ndwLink =
+        typeof window !== 'undefined' && window.RUNTIME_CONFIG
+            ? window.RUNTIME_CONFIG.NEXT_PUBLIC_NDW_LINK
+            : process.env.NEXT_PUBLIC_NDW_LINK;
+
+    const gisLink =
+        typeof window !== 'undefined' && window.RUNTIME_CONFIG
+            ? window.RUNTIME_CONFIG.NEXT_PUBLIC_GIS_LINK
+            : process.env.NEXT_PUBLIC_GIS_LINK;
+    const csLink =
+        typeof window !== 'undefined' && window.RUNTIME_CONFIG
+            ? window.RUNTIME_CONFIG.NEXT_PUBLIC_CS_LINK
+            : process.env.NEXT_PUBLIC_CS_LINK;
+    const ssLink =
+        typeof window !== 'undefined' && window.RUNTIME_CONFIG
+            ? window.RUNTIME_CONFIG.NEXT_PUBLIC_SELF_SERVICE_LINK
+            : process.env.NEXT_PUBLIC_SELF_SERVICE_LINK;
+
     const tiles = [
         {
             image: faBarChart,
             name: "NDW Portal",
             description: "The NDW Portal serves as an enterprise-wide data repository, providing data warehousing capabilities for health-related information",
-            href:process.env.NEXT_PUBLIC_NDW_LINK
+            href: ndwLink
         },
         {
             image: faMapLocation,
             name: "Geo Spatial Intelligence Maps",
             description: "Interactive maps that show patient distribution and outcomes and easily allow drill down from national to facility level to uncover spatial patterns and guide targeted interventions.",
-            href:process.env.NEXT_PUBLIC_GIS_LINK
+            href: gisLink
         },
         {
             image: faDatabase,
             name: "Self-Service Analytics",
             description: "Empowering registered users to explore and analyze their own data—build custom charts, extract datasets, and generate insights to inform decisions and improve program outcomes.",
-            href:process.env.NEXT_PUBLIC_SELF_SERVICE_LINK
+            href: ssLink
         },
         {
             image: faHeartPulse,
             name: "HIV Case Surveillance Dashboards",
             description: "Everything you need to know about HIV Case Surveillance - from real-time trends and longitudinal tracking of cohorts to geographic hotspots and public health response reports- all in one place.",
-            href:process.env.NEXT_PUBLIC_CS_LINK
+            href: csLink
         }
     ];
 

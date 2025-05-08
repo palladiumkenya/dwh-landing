@@ -1,0 +1,8 @@
+// public/runtime-config.js
+window.RUNTIME_CONFIG = {
+    NEXT_PUBLIC_API_URL: "",
+    NEXT_PUBLIC_NDW_LINK: "",
+    NEXT_PUBLIC_GIS_LINK: "",
+    NEXT_PUBLIC_SELF_SERVICE_LINK: "",
+    NEXT_PUBLIC_CS_LINK: "",
+};
