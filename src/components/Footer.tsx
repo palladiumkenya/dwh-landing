@@ -48,7 +48,8 @@ const Footer = () => {
             <h2 className="text-xl font-bold mb-4">Address</h2>
             <div className="mt-4">
               <iframe
-                  src="https://www.google.com/maps/place/National+AIDS+and+STIs+Control+Program+(NASCOP)/@-1.3046613,36.8041191,17z/data=!4m14!1m7!3m6!1s0x182f10f24fcdb317:0xfd93104f8baf397!2sNational+AIDS+and+STIs+Control+Program+(NASCOP)!8m2!3d-1.3046613!4d36.806694!16s%2Fg%2F1tf8k8sd!3m5!1s0x182f10f24fcdb317:0xfd93104f8baf397!8m2!3d-1.3046613!4d36.806694!16s%2Fg%2F1tf8k8sd?entry=ttu&g_ep=EgoyMDI1MDQyOS4wIKXMDSoASAFQAw%3D%3D"
+
+                  src="https://www.google.com/maps?q=National+AIDS+and+STIs+Control+Program+(NASCOP)&output=embed"
                   width="100%"
                   height="200"
                   frameBorder="0"
