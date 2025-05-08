@@ -16,25 +16,25 @@ const Products = () => {
             image: faBarChart,
             name: "NDW Portal",
             description: "The NDW Portal serves as an enterprise-wide data repository, providing data warehousing capabilities for health-related information",
-            href:process.env.NDW_LINK
+            href:process.env.NEXT_PUBLIC_NDW_LINK
         },
         {
             image: faMapLocation,
             name: "Geo Spatial Intelligence Maps",
             description: "Interactive maps that show patient distribution and outcomes and easily allow drill down from national to facility level to uncover spatial patterns and guide targeted interventions.",
-            href:process.env.GIS_LINK
+            href:process.env.NEXT_PUBLIC_GIS_LINK
         },
         {
             image: faDatabase,
             name: "Self-Service Analytics",
             description: "Empowering registered users to explore and analyze their own data—build custom charts, extract datasets, and generate insights to inform decisions and improve program outcomes.",
-            href:process.env.SELF_SERVICE_LINK
+            href:process.env.NEXT_PUBLIC_SELF_SERVICE_LINK
         },
         {
             image: faHeartPulse,
             name: "HIV Case Surveillance Dashboards",
             description: "Everything you need to know about HIV Case Surveillance - from real-time trends and longitudinal tracking of cohorts to geographic hotspots and public health response reports- all in one place.",
-            href:process.env.CS_LINK
+            href:process.env.NEXT_PUBLIC_CS_LINK
         }
     ];
 
