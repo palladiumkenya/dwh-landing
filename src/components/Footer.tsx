@@ -25,9 +25,8 @@ const Footer = () => (
                     <h2 className="text-xl font-bold mb-4">Useful Links</h2>
                     <ul className="space-y-2">
                         <li><a href="#" className="text-white hover:text-blue-700">Home</a></li>
-                        <li><a href="#" className="text-white hover:text-blue-700">Apps</a></li>
-                        <li><a href="#" className="text-white hover:text-blue-700">Products</a></li>
-                        <li><a href="#" className="text-white hover:text-blue-700">Resources</a></li>
+                        <li><a href="#products" className="text-white hover:text-blue-700">Apps</a></li>
+                        <li><a href="https://nascop.org" className="text-white hover:text-blue-700">Resources</a></li>
                     </ul>
                 </div>
 

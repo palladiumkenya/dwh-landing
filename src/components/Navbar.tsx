@@ -10,8 +10,7 @@ const Navbar = () => {
                     <div className="flex space-x-4">
                         <a href="#" className="text-gray-800">Home</a>
                         <a href="#products" className="text-gray-800">Apps</a>
-                        <a href="#products" className="text-gray-800">Products</a>
-                        <a href="#products" className="text-gray-800">Resources</a>
+                        <a href="https://nascop.org" className="text-gray-800">Resources</a>
                     </div>
                     <div className="flex space-x-4">
                         {/*<button className="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-700">Sign Up</button>*/}
