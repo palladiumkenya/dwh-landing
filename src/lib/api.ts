@@ -27,7 +27,7 @@ export function useStats() {
         currentFacilityCount:2004,
         currentPartnerCount:35,
         currentCountyCount:40,
-        periodInfo:'Apr 2025'
+        periodInfo:'July 2025'
     });
 
     // useEffect(() => {
