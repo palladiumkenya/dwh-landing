@@ -23,9 +23,11 @@ const Content = () => {
                             className="highlight">{stats.facilityCount}</span> Health Facilities across <span
                             className="highlight">{stats.countyCount}</span> counties in Kenya
                             supported by various Service Delivery Partners (SDPs) have uploaded Care and Treatment data
-                            to the platform.
+                            to the platform.</p>
 
-                            As of <span className="highlight">{stats.periodInfo}</span>, A total of <span className="highlight">{stats.currentFacilityCount}</span> facilities
+                        <p className="mt-4 text-lg">
+                            As of <span className="highlight">{stats.periodInfo}</span>, A total of <span
+                            className="highlight">{stats.currentFacilityCount}</span> facilities
                             submitted Care and Treatment datasets to the NDW, supported by <span
                             className="highlight">{stats.currentPartnerCount}</span> SDPs operating in the <span
                             className="highlight">{stats.currentCountyCount}</span> counties</p>

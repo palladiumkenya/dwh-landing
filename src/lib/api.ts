@@ -24,9 +24,9 @@ export function useStats() {
         facilityCount:2575,
         countyCount:45,
         partnerCount:40,
-        currentFacilityCount:1937,
-        currentPartnerCount:36,
-        currentCountyCount:41,
+        currentFacilityCount:2004,
+        currentPartnerCount:35,
+        currentCountyCount:40,
         periodInfo:'Apr 2025'
     });
 
