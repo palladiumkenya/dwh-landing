@@ -19,12 +19,18 @@ const Content = () => {
                         </svg>
 
                         <p className="mt-4 text-lg">
-                            <span className="highlight">{stats.facilityCount}</span> Health Facilities in <span
-                            className="highlight">{stats.countyCount}</span> counties in Kenya,
-                            supported by <span className="highlight">{stats.partnerCount}</span> SDPs have ever uploaded
-                            care & treatment data to the warehouse since
-                            it’s inception. As at <span className="highlight">{stats.periodInfo}</span>, {stats.facilityCount} facilities
-                            had reported patients current on ART</p>
+                            Since the inception of the National Data Warehouse (NDW), a cumulative total of <span
+                            className="highlight">{stats.facilityCount}</span> Health Facilities across <span
+                            className="highlight">{stats.countyCount}</span> counties in Kenya
+                            supported by various Service Delivery Partners (SDPs) have uploaded Care and Treatment data
+                            to the platform.</p>
+
+                        <p className="mt-4 text-lg">
+                            As of <span className="highlight">{stats.periodInfo}</span>, A total of <span
+                            className="highlight">{stats.currentFacilityCount}</span> facilities
+                            submitted Care and Treatment datasets to the NDW, supported by <span
+                            className="highlight">{stats.currentPartnerCount}</span> SDPs operating in the <span
+                            className="highlight">{stats.currentCountyCount}</span> counties</p>
                     </div>
                     <div className="w-2/1 relative inline-block semicircle-background">
                         <img src="/doc-trans.png" alt="Content Image" className="float-image"/>
