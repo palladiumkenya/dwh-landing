@@ -6,6 +6,9 @@ export interface Stats {
     facilityCount?: number
     countyCount?: number
     partnerCount?: number
+    currentFacilityCount?: number
+    currentCountyCount?: number
+    currentPartnerCount?: number
     periodInfo?: string
 }
 
@@ -18,22 +21,25 @@ export function useStats() {
         process.env.NEXT_PUBLIC_API_URL;
 
     const [stats, setStats] = useState<Stats>({
-        facilityCount:2525,
+        facilityCount:2575,
         countyCount:45,
         partnerCount:40,
+        currentFacilityCount:1937,
+        currentPartnerCount:36,
+        currentCountyCount:41,
         periodInfo:'Apr 2025'
     });
 
-    useEffect(() => {
-        async function fetchMessage() {
-            const response = await fetch(`${apiUrl}/api/Stats/Reporting/Current`);
-            const data: Stats = await response.json();
-            setStats(data);
-        }
-        if(apiUrl) {
-            fetchMessage();
-        }
-    }, [apiUrl]);
+    // useEffect(() => {
+    //     async function fetchMessage() {
+    //         const response = await fetch(`${apiUrl}/api/Stats/Reporting/Current`);
+    //         const data: Stats = await response.json();
+    //         setStats(data);
+    //     }
+    //     if(apiUrl) {
+    //         fetchMessage();
+    //     }
+    // }, [apiUrl]);
 
     return stats;
 }
