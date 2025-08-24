@@ -21,13 +21,13 @@ export function useStats() {
         process.env.NEXT_PUBLIC_API_URL;
 
     const [stats, setStats] = useState<Stats>({
-        facilityCount:2575,
+        facilityCount:2587,
         countyCount:45,
         partnerCount:40,
-        currentFacilityCount:2004,
-        currentPartnerCount:35,
+        currentFacilityCount:2130,
+        currentPartnerCount:36,
         currentCountyCount:40,
-        periodInfo:'July 2025'
+        periodInfo:'August 2025'
     });
 
     // useEffect(() => {
